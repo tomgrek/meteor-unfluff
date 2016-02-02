@@ -1,0 +1,11 @@
+{
+  "name": "unfluff",
+  "description": "Unfluff packaged for Meteor",
+  "homepage": "https://github.com/tomgrek/meteor-unfluff",
+  "author": "Adam Geitgey (https://github.com/ageitgey/)",
+  "version": "0.3.0.1",
+  "git": "https://github.com/ageitgey/node-unfluff.git",
+  "packages": {
+    "underscore": {}
+  }
+}
