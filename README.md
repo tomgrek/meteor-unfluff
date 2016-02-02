@@ -1,18 +1,19 @@
-# hashids repackaged for Meteor.js
+# Unfluff repackaged for Meteor.js
 
 ```
-meteor add tomgrek:hashids
+meteor add tomgrek:unfluff
 ```
 
-Forked from timbrandin:meteor-hashids
+Repackages Adam Geigey's awesome Node Unfluff web scraper for Meteor.
 
-Changed to get the shortest possible hash (not always 6 chars in length)
-
-Changed to lowercase letters and removed 'bad' letters like i,l,o,u,w.
+https://github.com/ageitgey/node-unfluff
 
 ## Examples
 
+html is a string of html data acquired e.g. with Node's Request package.
+
 ```
-Meteor.hashid(123)
-Meteor.hashid(Date.now())
+Meteor.unfluff(html)
 ```
+
+Returns an object containing the scraped web page's title, header image, keywords, main content etc.
